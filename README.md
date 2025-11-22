@@ -75,7 +75,7 @@ scrapreview = reviews_all(
 ```
 
 **Output**: File `ulasan_aplikasi.csv` berisi kolom:
-- `Review`: Konten ulasan pengguna
+- `Review`: Konten ulasan pengguna (kolom utama yang digunakan dalam analisis)
 
 ---
 
@@ -214,7 +214,6 @@ pip install -r requirements.txt
 ```python
 import nltk
 nltk.download('punkt')
-nltk.download('punkt_tab')
 nltk.download('stopwords')
 ```
 
@@ -286,7 +285,7 @@ Beberapa ide untuk pengembangan proyek:
 
 2. **Deep Learning Models**:
    - Implementasi LSTM/GRU untuk sequence modeling
-   - Fine-tune pre-trained models (BERT Indonesia)
+   - Fine-tune pre-trained models (IndoBERT, mBERT, atau XLM-RoBERTa untuk bahasa Indonesia)
 
 3. **Advanced Features**:
    - Aspect-based sentiment analysis
